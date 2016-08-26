@@ -87,16 +87,16 @@ var ShowAnswersView = function() {
 данных могут отправлять события. Могут содержать логику, в частности,
 для заданий определяют - выполнено ли задание или нет.
 
- * [Task](./models/task.md)
- * [JavascriptTask](./models/javascript-task.md)
- * [JavascriptChallengeTask](./models/javascript-challenge-task.md)
- * [Goal](./models/goal.md)
- * [JavascriptGoal](./models/javascript-goal.md)
- * [JavascriptChallengeGoal](./models/javascript-challenge-goal.md)
- * [Code](./models/code.md)
+ * [Task](./models/task.md) - базовая модель для заданий
+ * [JavascriptTask](./models/javascript-task.md) - javascript-задание
+ * [JavascriptChallengeTask](./models/javascript-challenge-task.md) - javascript-испытание
+ * [Goal](./models/goal.md) - цель в задании
+ * [JavascriptGoal](./models/javascript-goal.md) - цель в javascript-задании
+ * [JavascriptChallengeGoal](./models/javascript-challenge-goal.md) - цель в javascript-испытании
+ * [Code](./models/code.md) - модель, хранящая текущее состояние кода
 
- * [AstAsserts](./models/ast-asserts.md)
- * [ConsoleAsserts](./models/console-asserts.md)
+ * [AstAsserts](./models/ast-asserts.md) - проверки совпадения кода с заданными шаблонами
+ * [ConsoleAsserts](./models/console-asserts.md) - проверка содержимого консоли
 
 **Отображения** (view) - объекты, плотно связанные с DOM, реагируют
 на события, что-нибудь меняют в DOM и отправляют события, реагируя
@@ -127,4 +127,3 @@ var ShowAnswersView = function() {
  * [Timer](./wrappers/timer.md) - обёртка над setTimeout
  * [Timers](./wrappers/timers.md) - стандартные таймеры, таймер на автосохранение и на выполнение кода/обновление iframe-а
  * [XHR](./wrappers/xhr.md) - обёртка для выполнения запросов к серверу
- 
