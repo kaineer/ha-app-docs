@@ -114,16 +114,17 @@ var ShowAnswersView = function() {
 **Обёртки** (wrapper) - объекты, содержащие в себе всю остальную логику,
 не попавшую в модели или отображения.
 
- * [Answers](./wrappers/answers.md)
- * [Console](./wrappers/console.md)
- * [ConsoleSlowdown](./wrappers/console-slowdown.md)
- * [Editor](./wrappers/editor.md)
- * [CssEditor](./wrappers/css-editor.md)
- * [HtmlEditor](./wrappers/editors/html-editor.md)
- * [JsEditor](./wrappers/editors/js-editor.md)
- * [Editors](./wrappers/editors.md)
- * [JavascriptRunner](./wrappers/javascript-runner.md)
- * [Storage](./wrappers/storage.md)
- * [Timer](./wrappers/timer.md)
- * [Timers](./wrappers/timers.md)
- * [XHR](./wrappers/xhr.md)
+ * [Answers](./wrappers/answers.md) - получает доступ к редакторам и выводит в них автоматическое выполнение задания
+ * [Console](./wrappers/console.md) - объект, принимающий методы вместо стандартного `window.console`
+ * [ConsoleSlowdown](./wrappers/console-slowdown.md) - прокладка между `Console` и `JavascriptConsoleView`.
+ * [Editor](./wrappers/editor.md) - базовый редактор, обёртка над `Ace.js`
+ * [CssEditor](./wrappers/css-editor.md) - базовый редактор с выбранным css режимом (пока не реализован)
+ * [HtmlEditor](./wrappers/editors/html-editor.md) - базовый редактор с выбранным html режимом (пока не реализован)
+ * [JsEditor](./wrappers/editors/js-editor.md) - базовый редактор с выбранным js режимом
+ * [Editors](./wrappers/editors.md) - контейнер для нескольких редакторов задачи
+ * [JavascriptRunner](./wrappers/javascript-runner.md) - обёртка, выполняющая javascript-код
+ * [Storage](./wrappers/storage.md) - обёртка над localStorage
+ * [Timer](./wrappers/timer.md) - обёртка над setTimeout
+ * [Timers](./wrappers/timers.md) - стандартные таймеры, таймер на автосохранение и на выполнение кода/обновление iframe-а
+ * [XHR](./wrappers/xhr.md) - обёртка для выполнения запросов к серверу
+ 
