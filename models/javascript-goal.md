@@ -8,4 +8,4 @@ JavascriptGoal
 
  * `runChecks` - запускает проверки. Метод запускается из метода `Goal#checkStatus`. Метод проверяет код на совпадение с указанным шаблоном и содержимое консоли на совпадение с переданным образцом.
 
-Объекты этого типа также имеют ссылку на объект [ASTAsserts](./ast-asserts) и [ConsoleAsserts](./console-asserts)
+Объекты этого типа также имеют ссылку на объект [ASTAsserts](./ast-asserts.md) и [ConsoleAsserts](./console-asserts.md)
