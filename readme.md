@@ -87,29 +87,43 @@ var ShowAnswersView = function() {
 данных могут отправлять события. Могут содержать логику, в частности,
 для заданий определяют - выполнено ли задание или нет.
 
- * [Task](./models/task.html)
- * [JavascriptTask](./models/javascript-task.html)
- * [JavascriptChallengeTask](./models/javascript-challenge-task.html)
- * [Goal](./models/goal.html)
- * [JavascriptGoal](./models/javascript-goal.html)
- * [JavascriptChallengeGoal](./models/javascript-challenge-goal.html)
- * [Code](./models/code.html)
+ * [Task](./models/task.md)
+ * [JavascriptTask](./models/javascript-task.md)
+ * [JavascriptChallengeTask](./models/javascript-challenge-task.md)
+ * [Goal](./models/goal.md)
+ * [JavascriptGoal](./models/javascript-goal.md)
+ * [JavascriptChallengeGoal](./models/javascript-challenge-goal.md)
+ * [Code](./models/code.md)
 
- * [AstAsserts](./models/ast-asserts.html)
- * [ConsoleAsserts](./models/console-asserts.html)
+ * [AstAsserts](./models/ast-asserts.md)
+ * [ConsoleAsserts](./models/console-asserts.md)
 
 **Отображения** (view) - объекты, плотно связанные с DOM, реагируют
 на события, что-нибудь меняют в DOM и отправляют события, реагируя
 на DOM-события.
 
- * [TaskView](./views/task-view.html) - отображение задания. На самом деле, могло бы быть обёрткой, т.к. по большей части создаёт другие отображения, обёртки и модели
- * [GoalsView](./views/goals-view.html) - показывает, насколько выполнены задания
- * [JavascriptConsoleView](./views/javascript-console-view.html) - отображает сообщения от консоли
- * [JavascriptControlsView](./views/javascript-controls-view.html) - кнопки управления заданием (проверить на сервере, сохранить код и т.п.)
- * [JavascriptRunView](./views/javascript-run-view.html) - кнопка "выполнить код", чекбокс "автовыполнение"
- * [NextTaskView](./views/next-task-view.html) - кнопка "следующее задание"
- * [ShowAnswersView](./views/show-answers-view.html) - кнопка "показать ответ"
- * [TaskCompletedView](./views/task-completed-view.html) - сообщение "задание выполнено"
+ * [TaskView](./views/task-view.md) - отображение задания. На самом деле, могло бы быть обёрткой, т.к. по большей части создаёт другие отображения, обёртки и модели
+ * [GoalsView](./views/goals-view.md) - показывает, насколько выполнены задания
+ * [JavascriptConsoleView](./views/javascript-console-view.md) - отображает сообщения от консоли
+ * [JavascriptControlsView](./views/javascript-controls-view.md) - кнопки управления заданием (проверить на сервере, сохранить код и т.п.)
+ * [JavascriptRunView](./views/javascript-run-view.md) - кнопка "выполнить код", чекбокс "автовыполнение"
+ * [NextTaskView](./views/next-task-view.md) - кнопка "следующее задание"
+ * [ShowAnswersView](./views/show-answers-view.md) - кнопка "показать ответ"
+ * [TaskCompletedView](./views/task-completed-view.md) - сообщение "задание выполнено"
 
 **Обёртки** (wrapper) - объекты, содержащие в себе всю остальную логику,
 не попавшую в модели или отображения.
+
+ * [Answers](./wrappers/answers.md)
+ * [Console](./wrappers/console.md)
+ * [ConsoleSlowdown](./wrappers/console-slowdown.md)
+ * [Editor](./wrappers/editor.md)
+ * [CssEditor](./wrappers/css-editor.md)
+ * [HtmlEditor](./wrappers/editors/html-editor.md)
+ * [JsEditor](./wrappers/editors/js-editor.md)
+ * [Editors](./wrappers/editors.md)
+ * [JavascriptRunner](./wrappers/javascript-runner.md)
+ * [Storage](./wrappers/storage.md)
+ * [Timer](./wrappers/timer.md)
+ * [Timers](./wrappers/timers.md)
+ * [XHR](./wrappers/xhr.md)
